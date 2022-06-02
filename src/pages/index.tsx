@@ -1,8 +1,7 @@
+import Suspense from 'components/atom/Suspense'
 import Reviews from 'components/block/Reviews'
-import Spinner from 'components/atom/Spinner'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Suspense from 'components/atom/Suspense'
 
 const Home: NextPage = ({}) => {
   return (
@@ -11,9 +10,7 @@ const Home: NextPage = ({}) => {
         <title>MSW NextJS React-Query</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Suspense fallback={<Spinner />}>
-        <Reviews />
-      </Suspense>
+      <Reviews />
     </>
   )
 }

@@ -2,6 +2,7 @@ import { rest } from 'msw'
 
 export const handlers = [
     rest.get('https://my.backend/book', async (req, res, ctx) => {
+
         return res(
             ctx.json({
                 title: 'Lord of the Rings',

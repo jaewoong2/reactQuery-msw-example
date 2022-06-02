@@ -16,7 +16,6 @@ const useGetReviews = (key = 'review', defaultOptions: Options) => {
         ...defaultOptions,
     })
 
-
     return data
 }
 
